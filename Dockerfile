@@ -5,6 +5,7 @@ RUN yum update -y && \
     yum install nginx -y
 
 ADD bin/init.sh /usr/local/bin/init.sh
+RUN chmod +x /usr/local/bin/init.sh
 
 EXPOSE 443
 EXPOSE 80
