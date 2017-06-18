@@ -7,6 +7,8 @@ RUN yum update -y && \
 ADD bin/init.sh /usr/local/bin/init.sh
 RUN chmod +x /usr/local/bin/init.sh
 
+ADD conf/etc/nginx/nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 443
 EXPOSE 80
 
